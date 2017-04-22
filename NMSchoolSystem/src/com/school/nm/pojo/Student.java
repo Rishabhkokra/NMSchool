@@ -1,5 +1,6 @@
 package com.school.nm.pojo;
 
+import java.util.Map;
 import java.util.Set;
 
 import javax.persistence.CascadeType;
@@ -75,6 +76,12 @@ public class Student {
 	}
 	public void setPersonalDetails(PersonalDetails personalDetails) {
 		this.personalDetails = personalDetails;
+	}
+	public Set<Subject> getSubjects() {
+		return subjects;
+	}
+	public void setSubjects( Set<Subject> subjects) {
+		this.subjects = subjects;
 	}
 	
 	
